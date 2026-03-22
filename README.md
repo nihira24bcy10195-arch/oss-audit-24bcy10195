@@ -7,6 +7,10 @@ Roll Number: 24BCY10195
 ## Chosen Software
 Git — Distributed Version Control System
 
+## Development Environment
+
+This project was developed and tested using the LabEx which is an online Linux environment. 
+
 ## Project Overview
 This project is a structured audit of Git as part of the Open Source Software course. It includes the following:
 

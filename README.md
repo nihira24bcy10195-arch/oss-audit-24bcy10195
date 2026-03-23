@@ -50,7 +50,11 @@ This takes user input and generates a personalized open-source philosophy statem
 ##Step 3: Give execute permission
   
 ./script1.sh
+
 ./script2.sh
+
 ./script3.sh
+
 ./script4.sh 
+
 ./script5.sh

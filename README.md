@@ -39,8 +39,7 @@ This reads a log file and counts the occurrences of a given keyword (default: "e
 ### Script 5 — Open Source Manifesto Generator
 This takes user input and generates a personalized open-source philosophy statement, saving it to a text file.
 
-![img](![h o l l a](https://github.com/user-attachments/assets/fc8c0b3a-5e10-4b0e-9998-d56058006583)
-)
+
 
 ## How to Run the Project
 ### Step 1: Open Terminal-

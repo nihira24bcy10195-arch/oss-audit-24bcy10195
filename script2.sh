@@ -1,19 +1,23 @@
 #!/bin/bash
-# Script 2: FOSS Package Inspector (macOS)
+# Script 2: FOSS Package Inspector
+# Author: Nihira Das | Course: Open Source Software
 
-PACKAGE="git"
+PACKAGE="git"  # Replace with your chosen package: linux, git, apache2, mysql, firefox
 
-if command -v $PACKAGE >/dev/null 2>&1; then
+# Check if package is installed
+if rpm -q $PACKAGE &>/dev/null; then
     echo "$PACKAGE is installed."
-    $PACKAGE --version
+    rpm -qi $PACKAGE | grep -E 'Version|License|Summary'
 else
     echo "$PACKAGE is NOT installed."
 fi
 
+# Case statement that prints a one-line philosophy note about the package
 case $PACKAGE in
-    git) echo "Git: distributed version control system enabling collaboration" ;;
-    apache2) echo "Apache: web server" ;;
-    mysql) echo "MySQL: database system" ;;
-    vlc) echo "VLC: media player" ;;
-    *) echo "Unknown package" ;;
+    linux) echo "Linux Kernel: the foundation of modern open-source computing." ;;
+    git) echo "Git: empowering collaboration and version control worldwide." ;;
+    httpd|apache2) echo "Apache: the web server that built the open internet." ;;
+    mysql|mariadb) echo "MySQL: open source at the heart of millions of applications." ;;
+    firefox) echo "Firefox: defending the open web and user freedom." ;;
+    *) echo "$PACKAGE is part of the open-source ecosystem." ;;
 esac

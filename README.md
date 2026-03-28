@@ -8,7 +8,7 @@
  Git — Distributed Version Control System
 
 ## Development Environment
-This project was developed
+This project was developed using Mac terminal for creation of .sh files and online environment named LabEX
 
 ## Project Overview
 Contents- 
@@ -44,7 +44,7 @@ This takes user input and generates a personalized open-source philosophy statem
  Go to the folder having scripts
 
 ### Step 2: Give execute permission
- # to makes the  files executable use - 
+ # to makes the  files executable, use - 
    -> chmod +x script1.sh script2.sh script3.sh script4.sh script5.sh 
 
 ##Step 3: Give execute permission

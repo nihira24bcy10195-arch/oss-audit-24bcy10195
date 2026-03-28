@@ -1,20 +1,28 @@
 #!/bin/bash
+# Script 1: System Identity Report
+# Author: Nihira Das | Course: Open Source Software
 
-# Script 1: System Identity Report (macOS)
+# --- Variables ---
+STUDENT_NAME="Nihira"
+SOFTWARE_CHOICE="Linux Kernel"
 
-STUDENT_NAME="Nihira Das"
-SOFTWARE="Git"
+# --- System Info ---
+KERNEL=$(uname -r)                     # To get the kernel version
+DISTRO=$(uname -o)                      #  To get the OS/Distribution name
+USER_NAME=$(whoami)                     # Current logged-in user
+HOME_DIR=$HOME                          # Home directory of current logged in user
+UPTIME=$(uptime -p)                     # System's  uptime
+DATE=$(date '+%d %B %Y %H:%M:%S')      # Current date and time
 
-KERNEL=$(uname -r)
-USER_NAME=$(whoami)
-UPTIME=$(uptime)
-DATE=$(date)
-DISTRO=$(sw_vers -productName)" "$(sw_vers -productVersion)
-echo " Open Source Audit — $STUDENT_NAME"
-echo "Software : $SOFTWARE"
-echo "Kernel   : $KERNEL"
-echo "User     : $USER_NAME"
-echo "Uptime   : $UPTIME"
-echo "Date     : $DATE"
-echo "Distro   : $DISTRO"
-echo "License  : GNU GPL (Free Software)"
+# --- Display ---
+echo "========================================"
+echo "     Open Source Audit — $STUDENT_NAME"
+echo "========================================"
+echo "Distribution : $DISTRO"
+echo "Kernel       : $KERNEL"
+echo "User         : $USER_NAME"
+echo "Home Dir     : $HOME_DIR"
+echo "Uptime       : $UPTIME"
+echo "Date/Time    : $DATE"
+echo ""
+echo "This operating system is under open-source licenses, GPL."

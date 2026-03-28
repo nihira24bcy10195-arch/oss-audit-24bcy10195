@@ -3,7 +3,7 @@
 # Author: Nihira Das | Course: Open Source Software
 
 # --- Variables ---
-STUDENT_NAME="Nihira"
+STUDENT_NAME="Nihira Das"
 SOFTWARE_CHOICE="Linux Kernel"
 
 # --- System Info ---
